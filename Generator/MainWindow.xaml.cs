@@ -147,5 +147,10 @@ namespace Generator
                 NickText.Text += File.ReadLines("third.txt", Encoding.GetEncoding("windows-1251")).Skip(rand.Next(len3)).First();
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(NickText.Text);
+        }
     }
 }

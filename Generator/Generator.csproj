@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="200-2003687_computer-icons-copying-photocopier-icon-design-photocopy-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

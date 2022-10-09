@@ -7,21 +7,28 @@
         mc:Ignorable="d"
         Title="Генератор никнеймов" Height="450" Width="800">
     <Grid Background="#FFB5C9FF">
-        <TextBox Name="NickText" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="690" Margin="50,50,0,0" FontSize="30" IsReadOnly="True"/>
-        <Rectangle Fill="#FF7C7CFF" HorizontalAlignment="Left" Height="151" Stroke="Black" VerticalAlignment="Top" Width="212" Margin="50,153,0,0"/>
-        <Rectangle Fill="#FF7C7CFF" HorizontalAlignment="Left" Height="151" Stroke="Black" VerticalAlignment="Top" Width="202" Margin="301,153,0,0"/>
+        <TextBox Name="NickText" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="579" Margin="50,50,0,0" FontSize="30" IsReadOnly="True"/>
+        <Rectangle Fill="#FF7C7CFF" HorizontalAlignment="Left" Height="151" Stroke="Black" VerticalAlignment="Top" Width="326" Margin="50,153,0,0"/>
+        <Rectangle Fill="#FF7C7CFF" HorizontalAlignment="Left" Height="151" Stroke="Black" VerticalAlignment="Top" Width="318" Margin="412,153,0,0"/>
         <StackPanel x:Name="Panel1">
             <RadioButton Name="radio1"  Content="Одно слово" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,169,0,0" FontSize="20" Height="29" Width="132" Checked="Radio1_Checked"/>
             <RadioButton Name="radio2" Content="Два слова" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,16,0,0" FontSize="20" Height="29" Width="132" Checked="Radio2_Checked"/>
             <RadioButton Name="radio3" Content="Три слова" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,16,0,0" FontSize="20" Height="29" Width="132" Checked="Radio3_Checked"/>
         </StackPanel>
-        <Rectangle Fill="#FF7C7CFF" HorizontalAlignment="Left" Height="151" Stroke="Black" VerticalAlignment="Top" Width="202" Margin="538,153,0,0"/>
         <StackPanel x:Name="Panel2">
-            <RadioButton Content="Женский" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="320,169,0,0" FontSize="20" Height="29" Width="132" Checked="RadioButton_Checked"/>
-            <RadioButton Content="Мужской" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="320,16,0,0" FontSize="20" Height="29" Width="132" Checked="RadioButton_Checked_1"/>
-            <RadioButton Content="Нейтральный" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="320,16,0,0" FontSize="20" Height="29" Width="152" Checked="RadioButton_Checked_2"/>
-            <Button Content="Генерировать" Margin="50,50,529,50" Height="50" Background="#FF7C7CFF" FontSize="20" Click="Button_Click"/>
-            <TextBlock Text="prickol_maniac 2022" Margin="450,0,42,0" Width="300"/>
+            <RadioButton Content="Женский" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,169,0,0" FontSize="20" Height="29" Width="132" Checked="RadioButton_Checked"/>
+            <RadioButton Content="Мужской" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,16,0,0" FontSize="20" Height="29" Width="132" Checked="RadioButton_Checked_1"/>
+            <RadioButton Content="Нейтральный" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="450,16,0,0" FontSize="20" Height="29" Width="152" Checked="RadioButton_Checked_2"/>
+
+            <UniformGrid Rows="1" Columns="2" Height="123">
+                <Button Content="Генерировать" Margin="50, 0, 75, 0" Height="50" Background="#FF7C7CFF" FontSize="20" Click="Button_Click"/>
+                <TextBlock Text="© prickol_maniac 2022" Margin="60,80,36,0"  Width="300" FontSize="28"/>
+            </UniformGrid>
         </StackPanel>
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="66" Margin="664,50,0,0" Height="50" BorderBrush="#00707070" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="200-2003687_computer-icons-copying-photocopier-icon-design-photocopy-icon.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
